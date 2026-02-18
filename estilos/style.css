@@ -82,6 +82,7 @@ button:hover {
 footer {
     color: var(--cor-destaque);
     text-align: center;
+    margin-top: 10px;
     padding: 10px;
     position: fixed;
     width: 100%;
