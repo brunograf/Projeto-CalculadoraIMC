@@ -113,6 +113,41 @@ div.circulo h2 {
     text-align: center;
 }
 
+div.dicas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+}
+
+div.topo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div.dicas i {
+    font-size: 2em;
+}
+
+div.dicas h2 {
+    margin-left: 10px;
+    font-size: 1.2em;
+    transform: translateY(5px);
+}
+
+div.dicas p {
+    font-size: 1em;
+    text-align: justify;
+}
+
 footer {
     color: var(--cor-destaque);
     text-align: center;
