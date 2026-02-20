@@ -4,12 +4,6 @@ var formOriginal = calculadora.innerHTML;
 function calcular() {
     var peso = Number(document.getElementById("peso").value);
     var altura = Number(document.getElementById("altura").value);
-
-    if (altura < 9.9) {
-    alert("A altura deve ser em centímetros.");
-    return;
-    }
-
     var alturaCm = Number(document.getElementById("altura").value) / 100; // Convertendo de cm para metros
     var imc = peso / (alturaCm * alturaCm);
     var classificacao = "";
