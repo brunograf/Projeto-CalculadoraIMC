@@ -37,8 +37,7 @@ function calcular() {
     document.querySelector("section>h2").style.display = "none";
     document.getElementById("imc").querySelector("h2").textContent = imc.toFixed(2);
     document.getElementById("classificacao").querySelector("h2").textContent = classificacao;
-    document.getElementById("imc").classList.remove("circulo");
-    document.getElementById("classificacao").classList.remove("circulo");
+    document.getElementsByClassName("res")[0].style.display = "flex";
     calculadora.innerHTML += "<br><button onclick='novoCalculo()'>Novo cálculo</button>";
 }
 

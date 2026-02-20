@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Estilos para a calculadora de IMC */
+
 
 :root {
     --cor-destaque: #294923;
@@ -54,6 +54,10 @@ section#calculadora {
     align-items: center;
 }
 
+section h2 {
+    margin-bottom: 10px;
+}
+
 input[type="number"] {
     padding: 10px;
     margin: 10px 0;
@@ -79,12 +83,19 @@ button:hover {
     background-color: #3e6e33;
 }
 
-div {
+div.res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.circulo {
     background-color: var(--cor-destaque);
     color: var(--cor-texto);
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,18 +103,14 @@ div {
     margin: 20px;
 }
 
-div p {
+div.circulo p {
     font-size: 0.8em;
     margin-bottom: 5px;
 }
 
-div h2 {
+div.circulo h2 {
     font-size: 1.5em;
     text-align: center;
-}
-
-div.circulo {
-    display: none;
 }
 
 footer {
